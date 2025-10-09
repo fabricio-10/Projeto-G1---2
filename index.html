@@ -1,14 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G1</title>
+    <title>G1- Portal de Notícias do G1</title>
+    <link rel="shortcut icon" href="imagens-home/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<h1 id="titulo">globo.com</h1>
-
-
-    
+    <!--Cabeçalho-->
+    <header class="navegacao-home">
+        <div class="logo">
+            <img src="imagens-home/teste-logo.svg" alt="Logo G1">
+        </div>
+        <!--navegação do site-->
+        <nav>
+           <a href="#">HOME</a>
+                <a href="#">NOTÍCIAS</a></li>
+               <a href=""> ESPORTES</a>
+                    <a href=""> FALE CONOSCO</a>
+        </nav>
+        <!--menu de busca do site-->
+        <form class="botao-buscar">
+            <input type="text" placeholder="Buscar...">
+            <!--botão de busca do site-->
+            <button type="submit">
+                <img src="imagens-home/lupa.png" alt="imagem de Uma Lupa">
+            </button>
+        </form>
+    </header>
+    <!--conteudo principal do site-->
+    <section class="noticia-principal">
+        <!-- deixando a noticia principal em cima-->
+        <img src="imagens-home/odete-roitmain.jpg" alt="Odete Roitmain">
+        <div class="conteudo-principal">
+            <h2> Quem matou Odete Roitman?</h2>
+            <p> Confira todos os detalhes e teorias sobre o caso que chocou o Brasil.</p>
+        </div>
+    </section>
+    <!--Minhas noticias principais-->
+    <section class="noticiais-principais">
+        <h3> Principais Notícias</h3>
+        <!--dividindo os conteúdos-->
+        <div class="artigos-principais">
+            <!--artigo para a noticia 01-->
+            <article>
+                <img src="imagens-home/energia-renovavel.jfif" alt="Energia Renovavel">
+                <h4>Governo Anunncia novos Investimentos em energia renovável</h4>
+                <p> O Ministério de Minas e Energia divulga pacote para ampliar parques solares e éolicos.</p>
+            </article>
+            <!--artigo para a noticia 02-->
+            <article>
+                <img src="imagens-home/desemprego.jfif" alt="Imagem representando o Desemprego">
+                <h4> IBGE divulga dados de desemprego do último trimestre</h4>
+                <p> A taxa de desemprego apresentou leve queda, mas informalidade preocupa especialistas.</p>
+            </article>
+            <!--artigo para a noticia 03-->
+            <img src="imagens-home/dengue.jfif" alt="Foto representando dengue">
+            <h4> Ministério da Saúde alerta para aumento de casos de dengue</h4>
+            <p> Autoridades reforçam medidas preventivas e pedem atenção da população.</p>
+        </div>
+    </section>
+    <!-- nossas últimas noticias um do lado do outro-->
+    <section class="ultimas-noticias">
+        <h3>Últimas Notícias</h3>
+        <!--dividir o conteúdo-->
+        <div class="caixa-container">
+            <!--noticia 01-->
+            <article>
+                <img src="imagens-home/segurança.jfif" alt="Imagem Representando segurança cibernética">
+                <h4> Senado aprova projeto sobre segurançacibernética</h4>
+                <p> A nova legislação padroniza protocolos de proteção de dados e reduz riscos de ataques digitais.</p>
+            </article>
+            <!--noticia 02-->
+            <article>
+                <img src="imagens-home/saneamento-basico.jfif" alt="Imagem Representando saneamento basico">
+                <h4> Cidades do Norte recebem investimentos em saneamento básico</h4>
+                <p> Programação federal prevê investimentos em saneamento básico</p>
+            </article>
+            <!--noticia 03-->
+            <article>
+                <img src="imagens-home/mudanças-climaticas.jfif" alt="Mudanças Climáticas">
+                <h4> Estudo revela impactos das mudanças climáticas na agricultura</h4>
+                <p> Pesquisadores alertam que a produção de grãos pode ser afetada por secas mais intensas</p>
+            </article>
+            <!--noticia 04-->
+            <article>
+                <img src="imagens-home/exportacao.png" alt="Imagem Representando Exportação">
+                <h4> Brasil registra recorde de exportações em setembro</h4>
+                <p> Dados da Secretaria de Comércio Exterior mostram volume histórico de exportações no mês passado.</p>
+            </article>
+            <!--noticia 05-->
+            <article>
+                <img src="imagens-home/inclusao.jfif" alt="Imagem Representando Inclusão Digital">
+                <h4> Ministério da Educação lança programa de inclusão digital</h4>
+                <p> Projeto visa fornecer computadores e internet a estudantes de escolas públicas.</p>
+            </article>
+            <!--noticia 06-->
+            <article>
+                <img src="imagens-home/expansao-metro.png" alt="Expansão do Metrô">
+                <h4>Nova política de transportes prevê expansão de metrôs e onibûs</h4>
+                <p> Governo federal anuncia investimentos para melhorar mobilidade urbana nas grandes cidades.</p>
+            </article>
+        </div>
+    </section>
+    <!--parte final-->
+    <footer>
+        <p> © 2025 G1- Todos os direitos reservados</p>
+    </footer>
 </body>
+
 </html>
