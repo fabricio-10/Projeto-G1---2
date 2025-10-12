@@ -13,8 +13,8 @@ O objetivo é recriar e criar as prinicipais seções do site, usando HTML e CSS
 </p>
 <h4> Autores</h4>
 <p>
-  Fabricio Nogueira
-  Ana Agatha
-  Gabriel Manfrere
-  Saulo Pires
+  Fabricio Nogueira <br>
+  Ana Agatha <br>
+  Gabriel Manfrere <br>
+  Saulo Pires <br>
 </p>
