@@ -1,0 +1,75 @@
+/* Importa a fonte */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*mudei a fonte e mudei a cor*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f7f5fa;
+  color: #333;
+}
+/*deixei a fonte do centro, e adicionei um espaçamento*/
+header {
+  text-align: center;
+  background-color: #940781;
+  color: white;
+  padding: 40px 20px;
+}
+/*mudei o tamanho da imagem*/
+header img{
+    width: 20px;
+}
+/*mudei o tamanho da fonte e adicionei uma margem*/
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+/*ajustei o tamanho da fonte*/
+header p {
+  font-size: 16px;
+}
+/*coloquei as caixas no centro e adicionei espaçamento*/
+main {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+/*tirei o _ e deixei em coluna pra ficar um embaixo do outro*/
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/*coloquei em blocos,tirei o _, coloqueie espaçamento,mudei o tamanho da fonte e o peso, adicionei sombras e
+quero que se movimente */
+.regioes a{
+  display: block;
+  text-decoration: none;
+  background-color: white;
+  color: #940781;
+  padding: 20px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+/*movimento*/
+a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+/*coloquei o texto no centro,mudei a cor,coloquei espaçamento e mudei o tamanho da 
+fonte*/
+footer {
+  text-align: center;
+  background-color: #940781;
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+}

@@ -1,43 +1,213 @@
-/*importanto fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-/*alterando toda a minha página*/
-*{
-    margin: 0%;
-    padding: 0%;
+
+/* 
+  zerei as margens e espaçamentos padrões*/
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-/*nessa caixa eu fiz:
-    -alterei a fonte
-    */
- body{
+/*troquei a fonte, e deixei o fundo branco*/
+body {
     font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    
- }
-/*nessa caixa eu fiz :
- - mudei o espaçamento
- - coloquei cores
- - adicionei sombras*/
- .navegacao.home{
     background-color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
 }
-/*imagem está ENORMEE*/
-.navegacao-home img{
-    width: 40px;
-    }
-    /*aqui quero que a logo não fique colada na margin*/
-    .logo{
-        display: inline-block;
-        margin-left: 40px;
-    }
-    .nav{
-        display: flex;
-        justify-content: space-between;
-        gap: 50px;
-        align-items: center;
-        margin-top: 10px;
-        
-    }
- 
+/*dimunui o tamnho da logo*/
+header img{
+    width: 50px;
+}
+/* - ajustei o cabeçalho com flexbox pra alinhar logo, menu e busca e adicionei sombras e espaçamento
+interno*/
+.navegacao-home {
+    background-color: red;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+/* criei o menu navegavel um do lado do outro*/
+.navegacao-home nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/*- destaquei os links e coloquei sublinhado no hover*/
+
+.navegacao-home nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navegacao-home nav a:hover {
+    text-decoration: underline;
+}
+
+/*  - alinhei o campo e o botão de busca*/
+.botao-buscar {
+    display: flex;
+    align-items: center;
+}
+/*dei um espaçamento interno,tirei borda e troquei a cor*/
+.botao-buscar input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    background-color: #ffffff;
+}
+/*mudei o tamnho da imagem porque estava muito grande*/
+.botao-buscar img{
+    width: 20px;
+}
+/* na noticia principal deixei um do lado do outro e coloquei margem para não ficar grudado no site
+mudei o tamnho da caixa e tambem desgrudei de cima */
+.noticia-principal {
+     display: flex;
+     justify-content: space-around;
+     margin-left: 10px;
+     margin-top: 20px;
+     align-content: center;
+     width: 700px;
+}
+/*coloquei que a minha imagem pega o tamanho total da minha caixa*/
+.noticia-principal img {
+    width: 100%; 
+}
+/*dentro do conteudo principal, a cor está preta deixei o espaçamento interno e adiconei  borda*/
+.conteudo-principal {
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    width: 1000px;
+    
+}
+/*aumentei a fonte, pus um espaçamento para não ficar grudado e coloquei nA esqurda*/
+.conteudo-principal h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+/* - aqui coloquei um tamanho para a caixa, e adicionei a margin*/
+.caixa-noticias {
+    width: 1200px;
+    height: 500px;
+    align-content: center;
+}
+/*organizei a caixa e ajustei a fonte para ela ficar no meio e sem ficar grudadada*/
+.caixa-noticias h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+} 
+/*colocou um do lado do outro adicionou um espaçamento igual entre eles*/
+.artigos-principais {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 200px;
+    width: 1000px;
+    
+}
+/*todos com a cor branca, mesmo tamnho,adicionei borda e sombra e quero que ele suba*/
+.artigos-principais article {
+   background-color: beige;
+    height: 100px;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+/*pra ele se movimentar quando passar o mouse*/
+.artigos-principais article:hover {
+    transform: translateY(-5px);
+}
+/*coloquei para a imagem ocupar 100% da caixa*/
+.artigos-principais img {
+    width: 100%;
+    height: 180px;
+   
+}
+/*aumentei o tamanho e coloquei uma margem*/
+.artigos-principais h4 {
+    font-size: 18px;
+    margin: 15px;
+}
+
+/* aumentei o tamanho,adicionei margin e espaçamento interno */
+.ultimas-noticias {
+    width: 8000px   ;
+    margin: 30px ;
+    padding: 0 20px;
+}
+/*centralizei o titulo na esquerda,aumentei a fonte, coloque um espaçamento e mudei a cor*/
+.ultimas-noticias h3 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: red;
+}
+/*tentando deixar em 3 por 3*/
+.caixa-container{
+    display: flex;
+    gap: 15px;
+    width: 200px;
+    
+}
+/*na coluna 01 e 02 tentei deixar uma embaixo da outra com o a direção de
+coluna e dei um espaçamento entre elas*/
+.coluna{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.coluna-02{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+/*aqui deixei todos os artigos com a mesma cor de fundo,mesmo tamnho adicionei borda e coloquei 
+para todos eles subirem quando passar o mouse*/
+
+.caixa-container article {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+/*dar movimento*/
+.caixa-container article:hover {
+    transform: translateY(-5px);
+}
+/*ajustei o tamnho*/
+.caixa-container img {
+    width: 300px;
+    height: 180px;
+}
+/*aumentei o texto e desgrudei da imagem*/
+.caixa-container h4 {
+    font-size: 18px;
+    margin: 15px;
+}
+/*aumentei a fonte e coloquei margem*/
+.caixa-container p {
+    font-size: 14px;
+    margin: 20px 5px;
+    
+}
+
+/* Footer */
+/* aqui eu fiz:
+ - finalizei com rodapé escuro e centralizado
+*/
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    margin-top: 400px;
+    padding: 20px;
+}
+

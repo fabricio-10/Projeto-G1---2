@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+/*ajustei o tamanho da caixa, margin e o espaçamento coloquei cor na caixa,borda e sompra
+e centralizei o texto*/
+.container {
+  width: 350px;
+  margin: 100px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+/*troquei a cor do titulo e subi ele*/
+h1 {
+  color: #1a237e;
+  margin-bottom: 20px;
+}
+/*deixei um emabaixo do outro com espaçamento*/
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+/*coloquei o texto na esquerda aumentei a fonte e troquei a cor*/
+label {
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+/*aumentar o espaçamento da caixa quando for digitar e deixei a borda com outra 
+cor*/
+input {
+  padding: 10px;
+    border: 1px solid #ccc;   
+  border-radius: 4px;
+}
+/*aumentei o botão,coloquei o espaçamenot e troquei a cor do fundo e
+da fonte*/
+button {
+  background: #1a237e;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/*quando passar o mouse trocar de cor*/
+button:hover {
+  background: #303f9f;
+}
+/*troquei a cor e tirei o _ e aumentei a fonte*/
+a {
+  color: #1a237e;
+  text-decoration: none;
+  font-size: 14px;
+}
+/*ao clicar ele volta com o_*/
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,223 @@
+/*importanto a fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: 0%;
+}
+
+/*aqui deixei o body com fundo branco, e as cores de texto cinza, e todo o site com a mesmas cores*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f5fa;
+    color: #333;
+}
+
+/* deixei flexivel para ficar um do lado do outro, alinhei no centro, deixei branco */
+.navegacao-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #6a2973;
+    padding: 10px 30px;
+}
+
+/*aqui troquei a cor dos links,
+    tirei o _ só para quando eu passar o mouse ele subir e pus um espaçamento entre eles*/
+.navegacao-home a {
+    color: #6a2973;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.navegacao-home a:hover {
+    text-decoration: underline;
+}
+
+
+/*main*/
+/*deixei tudo na mesma linha,
+arrumei o tamanhp da caixa para o titulo ficar no meio e o botao
+ficar na direita */
+.menu-dois {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #940781;
+    padding: 10px;
+    color: white;
+}
+
+/*deixei o titulo no meio*/
+.menu-dois h1 {
+    padding-left: 200px;
+    margin-left: 350px;
+}
+
+/*deixei o botão flexivel para alinhar ele no centro*/
+.botao-buscar {
+    display: flex;
+    align-items: center;
+}
+
+/*dei um espaçamento entre ele, adicionei borda e troquei a cor*/
+.botao-buscar input {
+    padding: 5px 10px;
+    background-color: #b704bd;
+    border-radius: 3px 0 0 3px;
+    color: white;
+}
+
+/*dentro do pleaceholder eu troquei a cor da font
+e porque não estava dando para enxergar*/
+.botao-buscar ::placeholder {
+    color: white;
+}
+
+/*aqui na conta globo eu tirei o _ , troquei a cor do texto e diminui a fonte*/
+.conta a {
+    color: #6a2973;
+    text-decoration: none;
+    font-size: 10px;
+
+}
+
+/*na logo da foto de perfil eu diminuí o tamanho e tentei abaixar para ficar equilibrado na mesma
+linha porém não consegui*/
+.conta img {
+    width: 20px;
+    margin-top: 05px;
+}
+
+/*main*/
+
+/*troquei a cor da caixa, dexei a fonte branca, dei um espaçamento "l" entre os conteúdos e ajustei
+o tamanho para ele ficar exatamente igual o do layout e deixei o texto na esquerda*/
+.banner {
+    background-color: #940781;
+    color: white;
+    text-align: left;
+    padding: 40px 20px;
+    width: 900px;
+    margin: 80px;
+
+
+}
+
+/*o titúlo eu tirei a margin e aumenti a fonte porque no layout
+o a fonte está maior*/
+.banner h2 {
+    margin: 0;
+    font-size: 40px;
+}
+
+/*aqui organizei a margem para ficar exatamente igual*/
+.banner p {
+    margin: 10px 0;
+}
+
+/*troquei a cor do botão, a cor da fonte tirei a  sombra borda, e deixei a fonte mais "gorda"
+aumentar a largura,
+*/
+.banner button {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-left: 700px;
+    width: 200px;
+    
+}
+.banner a{
+    text-decoration: none;
+}
+/* deixei flexivel para ficar com espaçamento um entre o outro e deixei eles distribuidos com
+um espaçamento igual*/
+.principal {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/*mudei o tamanho da imagem e adicionei uma borda e coloquei de outra cor*/
+.mapa img {
+    width: 400px;
+    border: 2px solid #d4c4e6;
+    border-radius: 6px;
+}
+
+/*deixei o paragrafo no meio e coloquei ele cinza*/
+.mapa-legenda {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+/*caixas total deixei ela de cima pra baixo,
+coloquei um espaçamento entre elas e coloquei um tamanho total*/
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+}
+
+/*troquei a cor das caixas, coloquei sombra, borda e quero que ela suba*/
+.card {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 20px;
+    transition: all 0.2s ease;
+}
+
+/* só levanta quando passa o mouse */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+
+.card h3 {
+    color: #940781;
+}
+
+/* troquei a cor de fundo e coloquei um espaçamento interno*/
+.ultimas {
+    background-color: #f0e9fa;
+    padding: 30px;
+}
+
+/*troquei a cor de fonte*/
+.ultimas h2 {
+    color: #940781;
+}
+
+/*caixas para cada notícia uma debaixo da outra e com espamento entre  elas*/
+.noticias {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/*coloquei uma borda que só pega na esqueda aumentei o tamanho do espaçamento*/
+.noticia {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* rodapé */
+.rodape {
+    text-align: center;
+    background-color: #940781;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+}
