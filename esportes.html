@@ -1,42 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Globo Esporte</title>
-    <link rel="stylesheet" href="esportes.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Brasileirão Série A | ge.globo</title>
+ <link rel="stylesheet" href="esportes.css">
 </head>
 <body>
-<nav class="caixa-navegação">
-    <a href="index.html" class="caixa1">Home</a>
-    <a href="#" class="caixa2">Regional</a>
-    <a href="#" class="caixa3">Esportes</a>
-    <a href="#" class="caixa4">Serviço do público</a>
+ <!-- Topo com menu superior -->
+ <header class="top-bar">
+ <div class="top-links">
+ <a href="" target="_blank">Home</a>
+ <a href="" target="_blank" class="active">Regional</a>
+ <a href="" target="_blank">Esportes</a>
+ <a href="" target="_blank">Fale conosco</a>
+ </div>
 
-    <input type="search" placeholder="BUSCAR">
-    <button type="submit"></button>
-</nav>
+ <div class="user">
+ <h4> Conta Globo</h4>
+ <input type="text" placeholder="Buscar..." class="search">
+ </div>
+ </header>
 
+ <!-- Menu principal -->
+ <nav class="main-nav">
+ <button class="menu-btn">☰ MENU</button>
+ <h1>ge <span>100 anos</span></h1>
+ </nav>
 
-<div class="logo-container">
-    <h1>GE -</h1>
-    <h2> 100 anos</h2>
+ <!-- Banner principal -->
+ <section class="hero">
+ <h2>Brasileirão Série A</h2>
+ <p>Acompanhe tabela, jogos e notícias do campeonato</p>
+ <a href="https://ge.globo.com/futebol/brasileirao-serie-a/" class="btn">Ver tabela completa</a>
+ </section>
+
+ <!-- Conteúdo principal -->
+ <main class="content">
+ <!-- Coluna lateral -->
+ <aside class="sidebar">
+ <h3>Campeonatos</h3>
+ <ul>
+ <li><a href="https://ge.globo.com/futebol/libertadores/">Libertadores</a></li>
+ <li><a href="https://ge.globo.com/futebol/copa-do-brasil/">Copa do Brasil</a></li>
+ <li><a href="https://ge.globo.com/futebol/champions-league/">Champions League</a></li>
+ <li><a href="https://ge.globo.com/esports/">eSports</a></li>
+ </ul>
+ <h4>Seu time</h4>
+ <input type="text" placeholder="Escolher time">
+ </aside>
+
+ <!-- Notícias -->
+ <section class="news">
+ <h3>Últimas notícias</h3>
+ <div class="news-grid">
+ <article class="news-item">
+ <img src="img aba esportes/flamengo-juventude-600x338.png" alt="Flamengo vence clássico">
+ <h4>Flamengo vence clássico e assume a liderança do Brasileirão</h4>
+ </article>
+
+ <article class="news-item">
+ <img src="img aba esportes/vestrappen-aus-rhty7ttofo6o.png" alt="Fórmula 1">
+ <h4>Verstappen domina na Bélgica e vence mais uma na Fórmula 1</h4>
+ </article>
+
+ <article class="news-item">
+ <img src="img aba esportes/13550190.png" alt="VAR polêmico">
+ <h4>Vídeo em destaque: Polêmica do VAR na rodada</h4>
+ </article>
+ </div>
+ </section>
+ </main>
+
+ <!-- Rodapé placar ao vivo -->
+ <footer class="footer">
+ <p>Placar ao vivo: <span>Flamengo 2 x 1 Vasco</span> • Fim de jogo</p>
+ </footer>
+
+ <footer class="rodape-principal">
+<div class="rodape-container">
+<div class="rodape-coluna-logo">
+<p class="navegacao-titulo">Navegação</p>
+<div class="logo-ge">ge</div>
+<div class="redes-sociais">
+<a href="#" aria-label="Facebook">f</a>
+<a href="#" aria-label="Twitter">X</a>
+<a href="#" aria-label="Instagram">■</a>
+<a href="#" aria-label="Youtube">▶</a>
 </div>
-<br><br>
-
-<div class="noticia-principal">
-<h1>Brasileirão Série A</h1>
-<h5>Acompanhe tabela, jogos e notícias do campeonato</h5>
-<button type="submit">VER TABELA COMPLETA</button>
 </div>
 
-
-
-
-
-
-
-
+<div class="rodape-coluna-links">
+<div class="links-grupo">
+<h4>Editoração</h4>
+<ul>
+<li><a href="#">Início</a></li>
+<li><a href="#">Quem Somos</a></li>
+</ul>
+</div>
+<div class="links-grupo">
+<h4>Notícias</h4>
+<ul>
+<li><a href="#">Vídeos</a></li>
+<li><a href="#">Anuncie Conosco</a></li>
+</ul>
+</div>
+<div class="links-grupo">
+<h4>Editorias</h4>
+<ul>
+<li><a href="#">Autoral/Estatístico</a></li>
+<li><a href="#">Basvitas</a></li>
+</ul>
+</div>
+<div class="links-grupo">
+<h4>Sobre</h4>
+<ul>
+<li><a href="#">Anuncie Conosco</a></li>
+</ul>
+</div>
+<div class="links-grupo">
+<h4>Sobre</h4>
+<ul>
+<li><a href="#">Termos de Uso</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
 
 
 </body>

@@ -1,0 +1,204 @@
+/* ======= CONFIGURAÇÕES GERAIS ======= */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Arial", sans-serif;
+}
+
+body {
+ background-color: #e9f0f6;
+ color: #333;
+}
+
+/* ======= CABEÇALHO ======= */
+.topo {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ background-color: #2a5d9f;
+ color: white;
+ padding: 15px 30px;
+}
+
+.logo h1 {
+ font-size: 28px;
+ font-weight: bold;
+}
+
+/* Navegação principal */
+.menu {
+ display: flex;
+ gap: 15px;
+}
+
+.menu a {
+ color: white;
+ text-decoration: none;
+ font-weight: bold;
+ transition: 0.3s;
+}
+
+.menu a:hover {
+ text-decoration: underline;
+}
+
+/* Campo de busca */
+.busca input {
+ padding: 8px 10px;
+ border: none;
+ border-radius: 4px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.conteudo {
+ display: grid;
+ grid-template-columns: 2fr 1fr;
+ gap: 20px;
+ padding: 30px;
+}
+
+/*BLOCO PRINCIPAL */
+.principal {
+ background-color: #ffffff;
+ padding: 25px;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.principal h2 {
+ color: #2a5d9f;
+ margin-bottom: 10px;
+}
+
+.principal button {
+ background-color: #2a5d9f;
+ color: white;
+ border: none;
+ padding: 10px 20px;
+ margin-top: 10px;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+.principal button:hover {
+ background-color: #1f4780;
+}
+
+.img_chat{
+    align-items: end;
+    width: 150px;
+}
+
+/* PARte CIDADANIA */
+.cidadania {
+ background-color: #ffffff;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cidadania h3 {
+ color: #2a5d9f;
+ margin-bottom: 15px;
+}
+
+/* Lista de categorias */
+.categorias {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+ gap: 10px;
+ margin-bottom: 20px;
+}
+
+.categoria {
+ background-color: #dbe7f3;
+ padding: 10px;
+ border-radius: 5px;
+ text-align: center;
+ font-weight: bold;
+}
+
+/* ======= CHAT ======= */
+.chat {
+ background-color: #f0f5fb;
+ padding: 15px;
+ border-radius: 5px;
+ text-align: center;
+}
+
+.chat button {
+ background-color: #2a5d9f;
+ color: white;
+ border: none;
+ padding: 8px 15px;
+ border-radius: 5px;
+ margin-top: 10px;
+ cursor: pointer;
+}
+
+.chat button:hover {
+ background-color: #1f4780;
+}
+
+/* ======= BARRA LATERAL ======= */
+.lateral {
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+}
+
+.noticia {
+ background-color: #ffffff;
+ padding: 15px;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.noticia h4 {
+ color: #2a5d9f;
+ margin-bottom: 5px;
+}
+
+.postosaudeimg{
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.imgfaltaagua{
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ======= RODAPÉ ======= */
+footer {
+ background-color: #2a5d9f;
+ color: white;
+ text-align: center;
+ padding: 15px;
+ margin-top: 20px;
+}
+
+/* ======= RESPONSIVIDADE ======= */
+@media (max-width: 900px) {
+ .conteudo {
+ grid-template-columns: 1fr;
+ }
+
+ .menu {
+ flex-wrap: wrap;
+ justify-content: center;
+ margin-top: 10px;
+ }
+
+ .busca {
+ width: 100%;
+ margin-top: 10px;
+ }
+
+ .busca input {
+ width: 100%;
+ }
+}

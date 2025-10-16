@@ -1,76 +1,257 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.cdnfonts.com/css/globoface-gothic-display-2001');
-
-
-/*modificação padrão*/
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: 0%;
+/* RESET */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+/* TOPO */
+.top-bar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #e9f2e4;
+padding: 8px 20px;
+border-bottom: 2px solid #0a7c2e;
+}
+.top-links a {
+color: #0a7c2e;
+margin-right: 12px;
+text-decoration: none;
+font-weight: bold;
+}
+.top-links a.active {
+color: #007a33;
+}
+.user {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.search {
+padding: 5px;
+border-radius: 4px;
+border: 1px solid #ccc;
 }
 
-/*cabeçalho com links*/
-.caixa-navegação{
-    display: flex;
-    justify-content: space-around;
-    padding: 30px;
-    text-align: center;
-    width: 100%;
-    height: 20px;
+/* NAVBAR */
+.main-nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #007a33;
+color: white;
+padding: 10px 20px;
+}
+.menu-btn {
+background: transparent;
+border: none;
+color: white;
+font-size: 20px;
+cursor: pointer;
+}
+.main-nav h1 {
+font-size: 24px;
+font-weight: bold;
+}
+.main-nav h1 span {
+font-size: 14px;
+color: #b6f5c0;
 }
 
-/*adicionei um hover em cada link das paginas*/
-.caixa1:hover{
-    background-color: #06AA49;
-    transition: 0.8s;
-    width: 70px;
-    border-radius: 10px;
+/* HERO */
+.hero {
+background: linear-gradient(135deg, #007a33, #004d1c);
+color: white;
+text-align: center;
+padding: 40px 20px;
+}
+.hero h2 {
+font-size: 32px;
+}
+.hero p {
+margin: 10px 0 20px;
+font-size: 18px;
+}
+.hero .btn {
+background: #f5b800;
+color: #004d1c;
+padding: 10px 20px;
+border-radius: 5px;
+text-decoration: none;
+font-weight: bold;
 }
 
-.caixa2:hover{
-    background-color: #06AA49;
-    transition: 0.8s;
-    width: 85px;
-    border-radius: 10px;
+/* CONTEÚDO */
+.content {
+display: flex;
+gap: 30px;
+padding: 30px 40px;
+background: #f5f8f3;
 }
 
-.caixa3:hover{
-    background-color: #06AA49;
-    transition: 0.8s;
-    width: 85px;
-    border-radius: 10px;
+/* SIDEBAR */
+.sidebar {
+width: 25%;
+}
+.sidebar h3 {
+color: #007a33;
+margin-bottom: 10px;
+}
+.sidebar ul {
+list-style: none;
+margin-bottom: 20px;
+}
+.sidebar ul li a {
+text-decoration: none;
+color: #004d1c;
+display: block;
+margin: 6px 0;
+}
+.sidebar input {
+width: 100%;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
 }
 
-.caixa4:hover{
-    background-color: #06AA49;
-    transition: 0.8s;
-    width: 150px;
-    border-radius: 10px;
+/* NOTÍCIAS */
+.news {
+width: 75%;
+}
+.news h3 {
+color: #007a33;
+margin-bottom: 15px;
+}
+.news-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+}
+.news-item {
+background: white;
+border-radius: 8px;
+box-shadow: 0 0 5px rgba(0,0,0,0.1);
+overflow: hidden;
+}
+.news-item img {
+width: 100%;
+height: 160px;
+object-fit: cover;
+}
+.news-item h4 {
+padding: 10px;
+color: #004d1c;
 }
 
-
-.logo-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #06AA49;
-    font-family: 'Globoface-Gothic-Display-2001', sans-serif;
-    width: 100%;
-    height: 80px;
+/* RODAPÉ */
+.footer {
+background: #003d1a;
+color: white;
+text-align: center;
+padding: 10px;
+font-size: 15px;
+}
+.footer span {
+color: #f5b800;
 }
 
-.noticia-principal{
-    text-align: center;
+/*
+==============================================
+ CSS DO RODAPÉ PRINCIPAL (VERDE ESCURO)
+==============================================
+*/
+
+/* Importando uma fonte para melhor aparência (Opcional) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+.rodape-principal {
+ background-color: #0b612e; /* Tom de verde escuro do ge */
+ color: #fff;
+ padding: 40px 20px;
+ font-family: 'Roboto', sans-serif;
 }
 
+.rodape-container {
+ max-width: 1200px; /* Limita a largura do conteúdo */
+ margin: 0 auto; /* Centraliza o conteúdo */
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap; /* Permite que as colunas quebrem em telas menores */
+ gap: 40px; /* Espaço entre a coluna da logo e a de links */
+}
 
+/* Coluna da Esquerda (Logo) */
+.rodape-coluna-logo {
+ flex: 1; /* Ocupa uma parte do espaço */
+ min-width: 200px;
+}
 
+.navegacao-titulo {
+ font-size: 12px;
+ color: #a0d4b2; /* Verde mais claro para o subtitulo */
+ margin: 0 0 10px 0;
+ text-transform: uppercase;
+}
 
+.logo-ge {
+ font-size: 60px;
+ font-weight: 900; /* Super negrito */
+ line-height: 1;
+}
+
+.redes-sociais {
+ margin-top: 20px;
+ display: flex;
+ gap: 15px; /* Espaço entre os ícones */
+}
+
+.redes-sociais a {
+ color: #fff;
+ text-decoration: none;
+ font-size: 20px;
+ font-weight: bold;
+ /* Para ícones de verdade, você pode querer ajustar o tamanho da fonte ou as dimensões */
+}
+
+/* Coluna da Direita (Links) */
+.rodape-coluna-links {
+ flex: 3; /* Ocupa 3 partes, dando mais espaço para os links */
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ gap: 20px;
+}
+
+.links-grupo {
+ min-width: 120px; /* Largura mínima para cada grupo de links */
+}
+
+.links-grupo h4 {
+ font-size: 16px;
+ font-weight: 700;
+ margin-top: 0;
+ margin-bottom: 15px;
+ color: #fff;
+}
+
+.links-grupo ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+.links-grupo ul li {
+ margin-bottom: 10px;
+}
+
+.links-grupo ul a {
+ color: #a0d4b2; /* Verde claro para os links */
+ text-decoration: none;
+ font-size: 14px;
+}
+
+.links-grupo ul a:hover {
+ text-decoration: underline; /* Efeito ao passar o mouse */
+}
